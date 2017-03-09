@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: BluemixWatsonFordham
+  host: BluemixWatsonFordham
+  disk_quota: 1024M
+  services:
+  - conversation-service
+  - discovery-service
+  - availability-monitoring-auto
+  buildpack: python_buildpack
